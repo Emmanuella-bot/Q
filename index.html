@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cibler les bons cours - MyIMCareer</title>
+  <style>
+    :root {
+      --noir: #000000;
+      --orange: #EF7D1B;
+      --rose: #E26BAE;
+      --blanc: #ffffff;
+      --grisFonce: #1a1a1a;
+      --grisClair: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--noir);
+      color: var(--blanc);
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      animation: slideDown 1s ease-out;
+      background-blend-mode: multiply;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: var(--orange);
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 0 1rem;
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    }
+
+    #downloadPdf {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: var(--orange);
+      color: var(--blanc);
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+      max-width: 120px;
+      text-align: center;
+    }
+
+    #downloadPdf:hover {
+      background-color: #d66914;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .intro {
+      background: var(--grisFonce);
+      border-left: 5px solid var(--rose);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      animation: fadeIn 2s ease;
+    }
+
+    .intro strong {
+      color: var(--orange);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--grisFonce);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+
+    th, td {
+      padding: 1.2rem;
+      border-bottom: 1px solid var(--grisClair);
+      text-align: left;
+      vertical-align: top;
+      transition: background 0.3s ease;
+    }
+
+    th {
+      background-color: transparent;
+      color: var(--orange);
+      font-weight: 700;
+      font-size: 1rem;
+      border-bottom: 2px solid var(--orange);
+    }
+
+    td {
+      font-size: 0.95rem;
+    }
+
+    tr:hover td {
+      background-color: rgba(226, 107, 174, 0.1);
+    }
+
+    .link-fiche {
+      display: block;
+      margin-top: 8px;
+      color: var(--rose);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+
+    .link-fiche:hover {
+      color: #d160a6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+        background-color: rgba(239, 125, 27, 0.15);
+        color: var(--orange);
+        z-index: 2;
+        border-bottom: 2px solid var(--orange);
+      }
+
+      td {
+        border-bottom: 1px solid var(--grisClair);
+        padding: 1rem 0.5rem;
+      }
+
+      tr {
+        margin-bottom: 1rem;
+        background-color: var(--grisFonce);
+        border-radius: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button id="downloadPdf">Télécharger</button>
+
+  <header>
+    <h1>Cibler les bons cours selon son projet professionnel (L2–L3 IM)</h1>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>
+        Parmi les cours proposés par l’IFRI (Institut de Formation et de Recherche en Informatique), spécialité Internet et Multimédia, certains doivent être suivis avec rigueur et approfondis davantage selon le débouché professionnel que vous souhaitez atteindre. Ce tableau vous aide à cibler précisément ces modules essentiels en L2 et L3 pour construire un parcours cohérent et adapté aux métiers clés du numérique et du multimédia.
+      </p>
+    </section>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Métier visé</th>
+          <th>Cours à cibler en L2 (S3–S4)</th>
+          <th>Cours à cibler en L3 (S5–S6)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Webdesigner
+            <a href="https://drive.google.com/file/d/1Vg9_zi194pNVOzOdXqX5U9ZcZ996Z2S2/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="link-fiche">Voir fiche</a>
+          </td>
+          <td>Programmation graphique, événementielle, Java entreprise, Fondements du multimédia, Ergonomie e-commerce, Interface utilisateur</td>
+          <td>Infographie 2D/3D, Certification outils multimédia & internet, Veille technologique Internet & Multimédia</td>
+        </tr>
+        <tr>
+          <td>
+            UI/UX Designer
+            <a href="https://drive.google.com/file/d/1M0iXnCgpBPC-91cW8KzyJWahh1WqoxVH/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="link-fiche">Voir fiche</a>
+          </td>
+          <td>Ergonomie e-commerce, Interface utilisateur, Technologies web avancées</td>
+          <td>Certification outils multimédia & internet, Veille technologique Internet & Multimédia</td>
+        </tr>
+        <tr>
+          <td>
+            Développeur front-end
+            <a href="https://drive.google.com/file/d/1eO7CL4rA2fR4-ISE3c7aJt9uOHBK77n0/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="link-fiche">Voir fiche</a>
+          </td>
+          <td>Technologies web avancées, Structure de données, Fondements du multimédia, Java et C++/Internet</td>
+          <td>Apps mobiles, Technologies immersives, Veille technologique</td>
+        </tr>
+        <tr>
+          <td>
+            Intégrateur web
+            <a href="https://drive.google.com/file/d/1uDSEsrAqE-SD_J6WHg5G9D8QXnuACmj2/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="link-fiche">Voir fiche</a>
+          </td>
+          <td>Technologies web, Structure de données, Multimédia, Programmation graphique</td>
+          <td>Infographie 2D/3D, Hackathon, Technologies immersives, Veille technologique</td>
+        </tr>
+        <tr>
+          <td>
+            Monteur vidéo
+            <a href="https://drive.google.com/file/d/1DoczdKiLOz7az3um96ytBR1Ch8TpnnWD/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="link-fiche">Voir fiche</a>
+          </td>
+          <td>Audio-visuel : image, vidéo & son, Fondements du multimédia, Dessin et art appliqué</td>
+          <td>Infographie 2D/3D, Technologies immersives, Hackathon multimédia</td>
+        </tr>
+        <tr>
+          <td>
+            Motion Designer
+            <a href="https://drive.google.com/file/d/1YJs3k9aazz7--RNX9MiGJdyItGcbS_0c/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="link-fiche">Voir fiche</a>
+          </td>
+          <td>Audio-visuel, Dessin appliqué, Fondements du multimédia</td>
+          <td>Infographie 2D/3D, Technologies immersives, Certification multimédia</td>
+        </tr>
+        <tr>
+          <td>
+            Community Manager
+            <a href="https://drive.google.com/file/d/1u83ksPG4nY8dZcHuaaan6O-pqevhPUWd/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="link-fiche">Voir fiche</a>
+          </td>
+          <td>Communication managériale, Bases de données web, Fondements du multimédia</td>
+          <td>Veille technologique, Certification outils web, Techniques entrepreneuriales</td>
+        </tr>
+        <tr>
+          <td>
+            Chef de projet digital (junior)
+            <a href="https://drive.google.com/file/d/1TGqsFAIIqpUdJJ3oqrk8ee9QJ5Nhsqbl/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="link-fiche">Voir fiche</a>
+          </td>
+          <td>Analyse orientée objet, Conduite de projets, Programmation graphique</td>
+          <td>Veille technologique, Apps mobiles, Entrepreneuriat</td>
+        </tr>
+        <tr>
+          <td>
+            Rédacteur web SEO
+            <a href="https://drive.google.com/file/d/1oePN8I57mK6f4Jn25jsNFPEW3ThCM5SL/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="link-fiche">Voir fiche</a>
+          </td>
+          <td>Techniques rédactionnelles, Fondements du multimédia, Marketing digital</td>
+          <td>SEO avancé, Analyse de données web, Veille technologique & outils SEO</td>
+        </tr>
+        <tr>
+          <td>
+            Trafic Manager
+            <a href="https://drive.google.com/file/d/1b4II5A7fByjvOt2smNy9ZF7rpVInMVB6/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="link-fiche">Voir fiche</a>
+          </td>
+          <td>Marketing digital, Bases de données web, Analyse statistique</td>
+          <td>Gestion de campagnes publicitaires, Analyse de données web, Certification outils web</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    document.getElementById('downloadPdf').addEventListener('click', () => {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF('p', 'pt', 'a4');
+      const element = document.body;
+
+      html2canvas(element, { scale: 2 }).then(canvas => {
+        const imgData = canvas.toDataURL('image/png');
+        const imgProps = doc.getImageProperties(imgData);
+        const pdfWidth = doc.internal.pageSize.getWidth();
+        const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+        doc.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+        doc.save('page_myimcareer.pdf');
+      });
+    });
+  </script>
+
+</body>
+</html>
